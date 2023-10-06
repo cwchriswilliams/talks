@@ -15,6 +15,13 @@
 
 #+REVEAL_HTML:<img src="images/bestfriends.gif" width="390px" height="292px" class="fragment fade-in">
 
+#+BEGIN_NOTES
+
+[[./images/bestfriends.gif]]
+
+
+#+END_NOTES
+
 * What is ChatGPT?
 #+ATTR_REVEAL: :frag (fade-out appear)
 - ChatGPT is a Large Language Model (LLM) and a Generative Pre-Trained Transformer
@@ -354,7 +361,6 @@ ChatGPT can correct its own mistakes
 #+BEGIN_NOTES
 
 https://learnprompting.org/docs/intermediate/chain_of_thought
-https://youtu.be/GZdytTKeGYM?t=450 Example
 #+END_NOTES
 
 * Didn't make the cut for this session
@@ -411,6 +417,42 @@ One thing I have been doing with RAG recently is taking a prompt from a user, fe
 - Essentaially preloads the model with your expected behaviours
 - More costly and difficult than prompt engineering
 - Does have its advantages once trained
+
+* My favourite way to learn
+
+- My favourite way to to learn with ChatGPT takes stages
+- It's a little like a heist movie where what we're stealing is knowlegde
+  #+REVEAL_HTML:<img src="images/heist.gif" width="390px" height="292px" class="fragment fade-in">
+
+** Stage 1: Formulating the Plan
+
+- Ask ChatGPT for a plan:
+
+=I am an experienced programmer with some experience of functional programming but no lisp. I am an experienced emacs user.
+Create a plan to teach me emacs-lisp with practical examples.=
+
+** Stage 2: Execute the Plan
+
+- Ask ChatGPT to start teaching you from the plan:
+
+=I am an experienced programmer with some experience of functional programming but no lisp. I am an experienced emacs user.
+Using the following plan, teach me emacs lisp with practical examples. Teach me in multiple responses and ask me if I want to continue to the next section. Explain in detail and go slow. Give me a examples I can run to explore what you are teaching me.
+
+Plan:=
+
+** The Complication
+
+- Interrupt the plan regularly with questions, queries, elaboration
+- Ask for examples
+- Ask for clarification
+- Tell it when it tells you something that doesn't work
+
+** Stage 3: The Twist
+
+- The twist is, there is no twist.
+- You've just learned any topic you like with a personal tutor who never gets annoyed at you.
+   #+REVEAL_HTML:<img src="images/mindblown.gif" width="390px" height="292px" class="fragment fade-in">
+
 
 * Examples of my chats
 
