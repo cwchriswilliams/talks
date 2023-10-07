@@ -74,6 +74,19 @@ Example of using iterations with ChatGPT is that the css file that provides the 
 
 #+END_NOTES
 
+** Take you from results that you feel came from...
+
+#+REVEAL_HTML:<img src="images/fansite.png" width="800px" class="fragment fade-in">
+
+** ... To something more like
+
+#+REVEAL_HTML:<img src="images/wiki.png" width="390px"  class="fragment fade-in">
+
+#+BEGIN_NOTES
+
+I feel the need to mention that ChatGPT generated this site for me, including the logo, the scrolling banner and the CRT screen flicker effect that you can't see in this picture.
+
+#+END_NOTES
 
 * Why is Prompt Engineering?
 
@@ -243,6 +256,7 @@ We can invent these for ChatGPT, for fun and practical reasons
 - =You are Samuel L. Jackson=
 - =You are an Customer Support Representative for Pets'r'totally'us=
 - =You are a supportive and encouraging, but strict maths teacher=
+- When in doubt, =You are an expert=
 
 #+BEGIN_NOTES
 
@@ -424,6 +438,11 @@ One thing I have been doing with RAG recently is taking a prompt from a user, fe
 - It's a little like a heist movie where what we're stealing is knowlegde
   #+REVEAL_HTML:<img src="images/heist.gif" width="390px" height="292px" class="fragment fade-in">
 
+#+BEGIN_NOTES
+[[./images/heist.gif]]
+
+#+END_NOTES
+
 ** Stage 1: Formulating the Plan
 
 - Ask ChatGPT for a plan:
@@ -446,12 +465,20 @@ Plan:=
 - Ask for examples
 - Ask for clarification
 - Tell it when it tells you something that doesn't work
+- Ask for tests, quizes and games
+- Tell it to go slower, more detailed, more advanced
 
 ** Stage 3: The Twist
 
 - The twist is, there is no twist.
 - You've just learned any topic you like with a personal tutor who never gets annoyed at you.
    #+REVEAL_HTML:<img src="images/mindblown.gif" width="390px" height="292px" class="fragment fade-in">
+
+#+BEGIN_NOTES
+
+[[./images/mindblown.gif]]
+
+#+END_NOTES
 
 
 * Examples of my chats
