@@ -76,7 +76,7 @@ Example of using iterations with ChatGPT is that the css file that provides the 
 
 ** Take you from results that you feel came from...
 
-#+REVEAL_HTML:<img src="images/fansite.png" width="800px" class="fragment fade-in">
+#+REVEAL_HTML:<img src="images/fansite.gif" width="800px" class="fragment fade-in">
 
 ** ... To something more like
 
@@ -493,5 +493,5 @@ https://learnprompting.org/
 
 
 #+BEGIN_NOTES
-'
+
 #+END_NOTES
