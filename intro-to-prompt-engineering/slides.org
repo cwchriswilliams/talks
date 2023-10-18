@@ -177,6 +177,7 @@ If you want to know the capital of France to win an argument, just ask what is t
 
 * Task
 
+#+ATTR_REVEAL: :frag (appear)
 - The most important part of a prompt
 - You'll generally get better results if you make this the last line of your prompt
 - Generally speaking, will begin with one of the following words
@@ -327,7 +328,8 @@ https://user-images.githubusercontent.com/8098155/268707026-6ed272f0-64d2-458e-b
 * Example
 #+ATTR_REVEAL: :frag (appear)
 - Also called =one-shot= or =few-shot= prompting (as opposed to =zero-shot=)
-Specify an example
+- Specify an example
+#+ATTR_REVEAL: :frag (appear)
 #+BEGIN_SRC
   *Neo and Morpheus are eating pizza*
   *Morpheus*: Pinapple on pizza is the most obvious reason The Matrix exists.
@@ -382,7 +384,7 @@ Specify an example
 ** Format can be input format too
 
 #+ATTR_REVEAL: :frag (appear)
-- =Ask me follow up message=
+- =Ask me follow up messages=
 - =The user will ask three questions, but you will ignore the first two=
 
 ** Only...
@@ -414,7 +416,7 @@ The last one is a great token saving trick. "<angry>" (in angle brackets) is fou
 #+ATTR_REVEAL: :frag (appear)
 - It's important to remember that ChatGPT completes based on what it has seen before
 - Sadly this means that good language skills do matter
-- A typo means that ChatGPT might not recognise a word that it would otherwise
+- A typo maens that ChatGPT might not recognise a word that it would otherwise
 - This can lead to it costing more in tokens as it breaks it up into subwords
 - Also means it's harder for it to find the accurate results
 - You'll probably not notice in general usage, but it does have an impact.
@@ -443,7 +445,7 @@ ChatGPT can correct its own mistakes
 
 #+END_NOTES
 
-* Chain of Thought Promtping
+* Chain of Thought Prompting
 
 #+ATTR_REVEAL: :frag (appear)
 - Can be as simple as saying =Let's work step-by-step=
@@ -451,8 +453,11 @@ ChatGPT can correct its own mistakes
 - =If I start with three apples, pick up two and drop one, how many apples do I have?=
 - GPT3.5 told me =two apples=
 - GPT3.5 with =Let's work step-by-step= correctly answered =four apples=
+- With a bit of a hint, ChatGPT can figure out it's a trick question
 
 #+BEGIN_NOTES
+
+I recently used this to get GPT4 to write me a murder mystery story summary. I made sure to ask it to give a step-by-step guide to how the detective solved the crime... to make sure that it was actually solvable reasonably, rather than just being CSI level random. (Apologies to CSI fans, I also have spent far too much time watching science montages)
 
 https://learnprompting.org/docs/intermediate/chain_of_thought
 
@@ -472,6 +477,7 @@ https://learnprompting.org/docs/intermediate/chain_of_thought
 #+ATTR_REVEAL: :frag (appear)
 - ChatGPT can look like it's doing maths, but it's not
 - You can make ChatGPT do maths with the WolframAlpha plugin, or by running embedded python code
+- Chain of Thought prompting works really well too
 - ChatGPT will almost always give an answer to a maths problem with confidence, right or wrong
 
 ** Cite Sources
@@ -509,21 +515,6 @@ https://www.perplexity.ai/
 
 - The next few slides will quickly run through some next level prompt engineering techniques.
 
-** Chain of Thought Prompting
-
-#+ATTR_REVEAL: :frag (appear)
-- For some operations, ChatGPT struggles, most notably with maths problems or logic problems
-- By asking ChatGPT to run through step-by-step, it can provide much more accurate results.
-- e.g. =What is 234 * 23456 / 123=
-- Transformed to: =What is 234 * 23456 / 123. Let's go step-by-step. Always show your full working=
-
-#+BEGIN_NOTES
-
-GPT-4 has been pretty good at maths problems I've given it so far, but with Chain of Thought prompting, you may get better results from 3.5 or other models.
-I recently used this to get GPT4 to write me a murder mystery story summary. I made sure to ask it to give a step-by-step guide to how the detective solved the crime... to make sure that it was actually solvable reasonably, rather than just being CSI level random. (Apologies to CSI fans, I also have spent far too much time watching science montages)
-
-#+END_NOTES
-
 ** DALL-E Prompting
 
 #+ATTR_REVEAL: :frag (appear)
@@ -539,6 +530,7 @@ I recently used this to get GPT4 to write me a murder mystery story summary. I m
 #+ATTR_REVEAL: :frag (appear)
 - With ChatGPT and DALL-E, you can chat and generate images together.
 - This means that you can have your normal ChatGPT conversations, but have an image generated to go along with them
+#+REVEAL_HTML:<img src="images/zork.png" height="292px" class="fragment fade-in">
 
 #+BEGIN_NOTES
 
@@ -574,7 +566,7 @@ One thing I have been doing with RAG recently is taking a prompt from a user, fe
 #+ATTR_REVEAL: :frag (appear)
 - My favourite way to to learn with ChatGPT takes stages
 - It's a little like a heist movie where what we're stealing is knowledge
-  #+REVEAL_HTML:<img src="images/heist.gif" width="390px" height="292px" class="fragment fade-in">
+  #+REVEAL_HTML:<img src="images/heist.gif" height="292px" class="fragment fade-in">
 
 #+BEGIN_NOTES
 [[./images/heist.gif]]
@@ -585,15 +577,20 @@ One thing I have been doing with RAG recently is taking a prompt from a user, fe
 
 #+ATTR_REVEAL: :frag (appear)
 - Ask ChatGPT for a plan:
-- =I am an experienced programmer with some experience of functional programming but no lisp. I am an experienced emacs user.
-Create a plan to teach me emacs-lisp with practical examples.=
+
+#+ATTR_REVEAL: :frag (appear)
+#+BEGIN_QUOTE
+I am an experienced programmer with some experience of functional programming but no lisp. I am an experienced emacs user.
+Create a plan to teach me emacs-lisp with practical examples.
+#+END_QUOTE
 
 ** Stage 2: Execute the Plan
 
 #+ATTR_REVEAL: :frag (appear)
 - Ask ChatGPT to start teaching you from the plan:
 
-#+BEGIN_SRC
+#+ATTR_REVEAL: :frag (appear)
+#+BEGIN_QUOTE
 I am an experienced programmer with some experience of functional programming but no lisp.
 I am an experienced emacs user.
 Using the following plan, teach me emacs lisp with practical examples.
@@ -602,7 +599,8 @@ Explain in detail and go slow.
 Give me a examples I can run to explore what you are teaching me.
 
 Plan:
-#+END_SRC
+<plan>
+#+END_QUOTE
 
 ** The Complication
 
@@ -628,6 +626,21 @@ Plan:
 
 #+END_NOTES
 
+* Summary
+
+#+ATTR_REVEAL: :frag (appear)
+- It's really hard to talk about Prompt Engineering in 40 minutes
+- Prompt Engineering is an iterative process
+- You can do a lot to improve you results but you don't need to do everything
+- It's useful to be aware of the limitations of ChatGPT as well as its power
+
+
 * Resources
 
 https://learnprompting.org/
+
+* Any Questions?
+
+#+ATTR_REVEAL: :frag (appear)
+- Direct them to ChatGPT
+- But I can answer some now
