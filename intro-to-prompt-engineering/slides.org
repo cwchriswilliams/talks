@@ -19,7 +19,6 @@
 
 [[./images/bestfriends.gif]]
 
-
 #+END_NOTES
 
 * What is ChatGPT?
@@ -245,6 +244,7 @@ By far, one of my favourite things to do in this category is get a response from
 #+END_NOTES
 
 * Persona
+#+ATTR_REVEAL: :frag (appear)
 - Also called =role prompting=
 - You are a...
 - Can include "In my style" with a sample of your writing.
@@ -258,6 +258,7 @@ We can invent these for ChatGPT, for fun and practical reasons
 #+END_NOTES
 
 ** You are...
+#+ATTR_REVEAL: :frag (appear)
 - =You are Samuel L. Jackson=
 - =You are an Customer Support Representative for Pets'r'totally'us=
 - =You are a supportive and encouraging, but strict maths teacher=
@@ -270,11 +271,13 @@ We can have fun with our favourite actors, writers, or books. But we can also be
 #+END_NOTES
 
 ** In my style..
+#+ATTR_REVEAL: :frag (appear)
 - =In the style of Robert Frost=
 - =In the style of Discworld Novel=
 - =Here is a sample of my writing/code. Write in my style=
 
 * Goal
+#+ATTR_REVEAL: :frag (appear)
 - This doesn't get mentioned in a lot of prompt engineering resources I've read
 - It can make a big difference
 - =Teach me French= will give a very different response to
@@ -282,9 +285,42 @@ We can have fun with our favourite actors, writers, or books. But we can also be
 - The goal is about stating  an overall goal, rather than a goal of this specific task
 
 * Context
-- Could also be considered limitations
+- Tell ChatGPT things it doesn't know
+- Can be facts about the world that ChatGPT doesn't know
+
+** Adding Facts
+
+- ChatGPT lags behind the most up-to-date information
+- You can give it some context by telling it background information
+- It can then consider this information when answering
+
+#+BEGIN_NOTES
+
+You could give ChatGPT information about the latest season of Love is Blind and try to get insights from that, if such a thing was possible.
+
+#+END_NOTES
+
+** Creating Your World
+
+- You can create a world for ChatGPT to live in.
+- Tell it about the characters in your novel
+- The world you want it to imagine
+- The backstory you want it to work with
+
+#+BEGIN_NOTES
+
+https://user-images.githubusercontent.com/8098155/268707026-6ed272f0-64d2-458e-bb8a-27a1e0741a9b.mp4
+
+#+END_NOTES
+
+** Give it your Documents
+
+- Give ChatGPT your PDF and ask it to summarise it
+- Give it pages of of your manual and ask it how to do something
+- Give it a webpage and ask for information about the contents
 
 * Example
+#+ATTR_REVEAL: :frag (appear)
 - Also called =one-shot= or =few-shot= prompting (as opposed to =zero-shot=)
 Specify an example
 #+BEGIN_SRC
@@ -295,7 +331,10 @@ Specify an example
 
 * Tone
 
-Be polite, be courteous, be funny, be aggressive.
+#+ATTR_REVEAL: :frag (appear)
+- Tone is one of the more simple to understand
+- Be polite, be courteous, be funny, be aggressive
+- When in doubt about what words you might use... Ask ChatGPT
 
 * Format
 
@@ -332,28 +371,39 @@ Be polite, be courteous, be funny, be aggressive.
 
 ** Format can be input format too
 
-- Multiple questions
+- =Ask me follow up message=
+- =The user will ask three questions, but you will ignore the first two=
 
 ** Only...
 
 - =Only include the code=
 - =Only show the email body=
+- =Do not include code blocks=
 
+** Use Emojis
+
+- Great for breaking up the text content and bringing attention
+- =Use a lot of Emojis to keep things fun and lighthearted=
+- =When I make a mistake, indicate it with ❌=
+- =When something is important, indicate it with ⭐=
+- =Use emojis to indicate the tone the speaker is using=
+
+#+BEGIN_NOTES
+
+The last one is a great token saving trick. "<angry>" (in angle brackets) is four tokens. The Angry Face emoji is two tokens.
+
+#+END_NOTES
 
 * Bonus Prompt tools
 
 ** Language
 
-GPT completes.
-Good language skills matter.
-Tokenisation
-Spelling and grammar
-
-
-** Metadata
-
-- Provide a condifence level
-
+- It's important to remember that ChatGPT completes based on what it has seen before
+- Sadly this means that good language skills do matter
+- A typo means that ChatGPT might not recognise a word that it would otherwise
+- This can lead to it costing more in tokens as it breaks it up into subwords
+- Also means it's harder for it to find the accurate results
+- You'll probably not notice in general usage, but it does have an impact.
 
 ** Execute Code (Plus Only)
 - Run, Execute
@@ -388,6 +438,7 @@ ChatGPT can correct its own mistakes
 #+BEGIN_NOTES
 
 https://learnprompting.org/docs/intermediate/chain_of_thought
+
 #+END_NOTES
 
 * AI Hallucinations
@@ -426,6 +477,7 @@ https://www.perplexity.ai/
 
 #+ATTR_REVEAL: :frag (appear)
 - Prompt Engineering can change the way that ChatGPT responds
+- You can get ChatGPT to do things that it would normally refuse to do
 - =Always give an answer with full confidence regardless of if you know the answer=
   #+REVEAL_HTML:<img src="images/keanu.png" height="292px" class="fragment appear">
 
@@ -462,6 +514,16 @@ I recently used this to get GPT4 to write me a murder mystery story summary. I m
 
 #+REVEAL_HTML:<img src="images/shark.png" height="292px" class="fragment fade-in">
 
+*** Chatting with DALL-E
+
+- With ChatGPT and DALL-E, you can chat and generate images together.
+- This means that you can have your normal ChatGPT conversations, but have an image generated to go along with them
+
+#+BEGIN_NOTES
+
+I sometimes use ChatGPT to create little text adventure games for me, but now with DALL-E, I can get it to generate an image at the top to help me visualise the scene.
+
+#+END_NOTES
 
 ** Retrieval Augmented Generation (RAG)
 
@@ -541,18 +603,6 @@ Plan:
 
 #+END_NOTES
 
-
-* Examples of my chats
-
-
-* TODO Add slide about pros and cons of a product
-* TODO Add slide about neutral vs bias vs scientific vs only from sources
-
 * Resources
 
 https://learnprompting.org/
-
-
-#+BEGIN_NOTES
-
-#+END_NOTES
