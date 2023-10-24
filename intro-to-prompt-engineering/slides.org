@@ -356,7 +356,7 @@ https://user-images.githubusercontent.com/8098155/268707026-6ed272f0-64d2-458e-b
 ** Specify formats
 #+ATTR_REVEAL: :frag (appear)
 - csv
-- tab separated-
+- tab separated
 - json
 - xml
 - Mermaid/PlantUML diagram
@@ -365,6 +365,7 @@ https://user-images.githubusercontent.com/8098155/268707026-6ed272f0-64d2-458e-b
 #+ATTR_REVEAL: :frag (appear)
 - In less than three sentences
 - In bullet points
+- As a haiku
 
 ** Specify display options
 #+ATTR_REVEAL: :frag (appear)
@@ -385,15 +386,26 @@ https://user-images.githubusercontent.com/8098155/268707026-6ed272f0-64d2-458e-b
 
 ** Provide a template
 
+- Templates are generally worse than examples
+
+ #+BEGIN_QUOTE
 *Scene context*
 *<Speaker Name>*: <Speaker Line>
 [sfx:**<sound-effect>**]
+#+END_QUOTE
 
 ** Format can be input format too
 
 #+ATTR_REVEAL: :frag (appear)
 - =Ask me follow up messages=
 - =The user will ask three questions, but you will ignore the first two=
+
+#+BEGIN_NOTES
+
+Asking for follow up messages when required is great. But we can also create something like from the movie Labyrinth.
+I've used this method to create a whole gameshow experience in ChatGPT with multiple people I'm competing against as a way to learn a topic... I've used it for Text Adventure games, quizzes, conversations.
+
+#+END_NOTES
 
 ** Only...
 
@@ -473,7 +485,7 @@ https://learnprompting.org/docs/intermediate/chain_of_thought
 
 ** Trick Question
 
-#+REVEAL_HTML:<img src="images/trick.png" width="390px">
+#+REVEAL_HTML:<img src="images/trick.png" width="700px">
 
 
 * AI Hallucinations
@@ -536,14 +548,14 @@ https://www.perplexity.ai/
 - e.g. I started with the prompt
   =An image of a private detective who is a shark in a gloomy detective's office, with the only light being from the closed blinds to his side.=
 
-#+REVEAL_HTML:<img src="images/shark.png" height="292px" class="fragment fade-in">
+#+REVEAL_HTML:<img src="images/shark.png" height="420px" class="fragment fade-in">
 
 *** Chatting with DALL-E
 
 #+ATTR_REVEAL: :frag (appear)
 - With ChatGPT and DALL-E, you can chat and generate images together.
 - This means that you can have your normal ChatGPT conversations, but have an image generated to go along with them
-#+REVEAL_HTML:<img src="images/zork.png" height="400px" class="fragment fade-in">
+#+REVEAL_HTML:<img src="images/zork.png" height="600px" class="fragment fade-in">
 
 #+BEGIN_NOTES
 
@@ -598,6 +610,12 @@ I am an experienced programmer with some experience of functional programming bu
 Create a plan to teach me emacs-lisp with practical examples.
 #+END_QUOTE
 
+#+BEGIN_NOTES
+
+We find the member of our crew who is best suited to creating a plan... ChatGPT.
+
+#+END_NOTES
+
 ** Stage 2: Execute the Plan
 
 #+ATTR_REVEAL: :frag (appear)
@@ -616,6 +634,12 @@ Plan:
 <plan>
 #+END_QUOTE
 
+#+BEGIN_NOTES
+
+We find the member of our crew who is best suited to executing the plan... ChatGPT.
+
+#+END_NOTES
+
 ** The Complication
 
 #+ATTR_REVEAL: :frag (appear)
@@ -625,6 +649,13 @@ Plan:
 - Tell it when it tells you something that doesn't work
 - Ask for tests, quizes and games
 - Tell it to go slower, more detailed, more advanced
+
+#+BEGIN_NOTES
+
+This is where I come in as the user, to mess up the plan.
+
+#+END_NOTES
+
 
 ** Stage 3: The Twist
 
@@ -637,6 +668,8 @@ Plan:
 #+BEGIN_NOTES
 
 [[./images/mindblown.gif]]
+
+Using this process I have studied (or am currently studying) Japanese, the history of the UK back to prehistoric Britain, emacs-lisp, Rust and native animals to the UK
 
 #+END_NOTES
 
