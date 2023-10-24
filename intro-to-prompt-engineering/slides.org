@@ -6,7 +6,7 @@
 #+OPTIONS: toc:nil num:nil reveal_title_slide:nil
 #+REVEAL_TITLE_SLIDE: <h3>%t</h3><h4>%s</h4><h6>%a</h6><img src="images/juxt-logo.png" class="juxt-logo">
 
-#+REVEAL_THEME: file:///home/chris/src/github.com/cwchriswilliams/talks/intro-to-prompt-engineering/style.css
+#+REVEAL_THEME: file:///home/cwi/src/github.com/cwchriswilliams/talks/talks/intro-to-prompt-engineering/style.css
 
 * What is ChatGPT?
 
@@ -76,11 +76,11 @@ Example of using iterations with ChatGPT is that the css file that provides the 
 
 ** How I used to see ChatGPT answers
 
-#+REVEAL_HTML:<img src="images/fansite.gif" width="800px" class="fragment fade-in">
+#+REVEAL_HTML:<img src="images/fansite.gif" width="1024px" class="fragment fade-in">
 
 ** How I now see ChatGPT answers
 
-#+REVEAL_HTML:<img src="images/wiki.png" width="390px"  class="fragment fade-in">
+#+REVEAL_HTML:<img src="images/wiki.png" width="550px"  class="fragment fade-in">
 
 #+BEGIN_NOTES
 
@@ -221,6 +221,7 @@ This is my personal favourite task for ChatGPT. It has suggested an answer and I
 - Guide
 #+ATTR_REVEAL: :frag (appear)
 - =Guide me through the process of deploying an AWS lambda=
+- =Walk  me through the process of creating a character in DnD 5e, asking me questions at each step=
 
 #+BEGIN_NOTES
 
@@ -261,6 +262,7 @@ We can invent these for ChatGPT, for fun and practical reasons
 ** You are...
 #+ATTR_REVEAL: :frag (appear)
 - =You are Samuel L. Jackson=
+- =You are a space-pirate from the 24th Century=
 - =You are an Customer Support Representative for Pets'r'totally'us=
 - =You are a supportive and encouraging, but strict maths teacher=
 - When in doubt, =You are an expert=
@@ -275,7 +277,7 @@ We can have fun with our favourite actors, writers, or books. But we can also be
 #+ATTR_REVEAL: :frag (appear)
 - =In the style of Robert Frost=
 - =In the style of Discworld Novel=
-- =Here is a sample of my writing/code. Write in my style=
+- =Here is a sample of my writing/code/tweets. Write in my style=
 
 * Goal
 #+ATTR_REVEAL: :frag (appear)
@@ -289,7 +291,6 @@ We can have fun with our favourite actors, writers, or books. But we can also be
 
 #+ATTR_REVEAL: :frag (appear)
 - Tell ChatGPT things it doesn't know
-- Can be facts about the world that ChatGPT doesn't know
 
 ** Adding Facts
 
@@ -335,6 +336,13 @@ https://user-images.githubusercontent.com/8098155/268707026-6ed272f0-64d2-458e-b
   *Morpheus*: Pinapple on pizza is the most obvious reason The Matrix exists.
   [sfx:**Bang on table**]
 #+END_SRC
+
+** One-Shot Great, Two-Shot Amazing, Few-Shot meh
+
+- One example makes a massive difference to how ChatGPT responds to you
+- Without a second example, ChatGPT can become hyper-focused on your exact example
+- An example showing the user getting a question right and an example showing the user getting a question wrong will provide much better results
+- Once you have provided some variety to break from the hyper-focus, the value drops dramatically
 
 * Tone
 
@@ -463,6 +471,11 @@ https://learnprompting.org/docs/intermediate/chain_of_thought
 
 #+END_NOTES
 
+** Trick Question
+
+#+REVEAL_HTML:<img src="images/trick.png" width="390px">
+
+
 * AI Hallucinations
 
 #+ATTR_REVEAL: :frag (fade-in)
@@ -530,7 +543,7 @@ https://www.perplexity.ai/
 #+ATTR_REVEAL: :frag (appear)
 - With ChatGPT and DALL-E, you can chat and generate images together.
 - This means that you can have your normal ChatGPT conversations, but have an image generated to go along with them
-#+REVEAL_HTML:<img src="images/zork.png" height="292px" class="fragment fade-in">
+#+REVEAL_HTML:<img src="images/zork.png" height="400px" class="fragment fade-in">
 
 #+BEGIN_NOTES
 
@@ -569,6 +582,7 @@ One thing I have been doing with RAG recently is taking a prompt from a user, fe
   #+REVEAL_HTML:<img src="images/heist.gif" height="292px" class="fragment fade-in">
 
 #+BEGIN_NOTES
+
 [[./images/heist.gif]]
 
 #+END_NOTES
@@ -618,7 +632,7 @@ Plan:
 - The twist is:
 - my metephor fell down at this point
 - You've just learned any topic you like with a personal tutor who never gets annoyed at you.
-   #+REVEAL_HTML:<img src="images/mindblown.gif" width="390px" height="292px" class="fragment fade-in">
+   #+REVEAL_HTML:<img src="images/mindblown.gif" width="400px" class="fragment fade-in">
 
 #+BEGIN_NOTES
 
@@ -637,7 +651,15 @@ Plan:
 
 * Resources
 
-https://learnprompting.org/
+- https://learnprompting.org/
+- 4IR with David Shapiro (YouTube)
+
+#+BEGIN_NOTES
+
+Learnprompting is an excellent resource I discovered after finishing this presentation, unfortunately, but it has interactive labs you can run.
+David Shapiro has an excellent YouTube channel that covers a lot of the more complex theory of Prompt Engineering but always with practical code you can see in action.
+
+#+END_NOTES
 
 * Any Questions?
 
